@@ -1,6 +1,6 @@
 /*
 
---- Custom CSS for WPDEV_STARTER ---
+--- Custom CSS for Weekly Rap ---
 
 */
 
@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0;
 }
 .banner {
-	background-color: transparent;
+	background-color: #555;
 	border: none;
 	margin-bottom: 0;
 }
@@ -22,9 +22,21 @@ h1, h2, h3, h4, h5, h6 {
 
 
 header { }
-
+.banner a {
+	color: #FFF !important;
+}
 /*Home page and Interior page banners*/
 .hero-wrap { }
+
+.header-wrap {
+	background: url(../images/header_img.jpg);
+	-webkit-background: url(../images/header_img.jpg);
+	-moz-background: url(../images/header_img.jpg);
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 400px;
+	margin-bottom: 25px;
+}
 
 .interior-banner-wrap {
 	background-color: #2c2c2c;

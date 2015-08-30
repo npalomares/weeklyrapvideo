@@ -16,25 +16,23 @@
       get_template_part('templates/header');
     }
   ?>
-  
-  <div class="hero-wrap">
+  <div class="header-wrap">
+    <div class="inner-header-wrap container">
+      
+    </div>
+  </div>
+
+
+  <div class="video-wrap">
   <?php if( is_front_page() ) { ?>
-    <div class="slideshow-wrap">
-      <div class="slideshow container">
-        <?php echo do_shortcode('[gm_slideshow]'); ?>
-      </div>
-    </div>
-    
-    <?php } else { ?>
-
-    <div class="interior-banner-wrap">
-      <div class="interior-banner container">
-        <h2 class="banner text-center"><?php the_title(); ?></h2>
+    <div class="video_group-wrap">
+      <div class="videos container">
+        <?php echo do_shortcode('[gm_videos]'); ?>
       </div>
     </div>
 
-    <?php } ?>
-
+  <?php } ?>
+  </div>
 
 
 
