@@ -1,0 +1,1 @@
+This will soon be a rap blog where I add weekly videos
