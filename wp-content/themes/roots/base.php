@@ -27,6 +27,7 @@
   <?php if( is_front_page() ) { ?>
     <div class="video_group-wrap">
       <div class="videos container">
+        <h3 class="top-header"><span>Recent Videos</span></h3>
         <?php echo do_shortcode('[gm_videos]'); ?>
       </div>
     </div>
@@ -35,20 +36,21 @@
   </div>
 
 
+  <div class="main-wrap">
+    <div class="wrap container" role="document">
+      <div class="row">
 
-  <div class="wrap container" role="document">
-    <div class="content row">
-
-      <div class="main <?php echo roots_main_class(); ?>" role="main">
-        <?php include roots_template_path(); ?>
-      </div><!-- /.main -->
-      <?php if (roots_display_sidebar()) : ?>
-        <aside class="sidebar <?php echo roots_sidebar_class(); ?>" role="complementary">
-          <?php include roots_sidebar_path(); ?>
-        </aside><!-- /.sidebar -->
-      <?php endif; ?>
-    </div><!-- /.content -->
-  </div><!-- /.wrap -->
+        <div class="main <?php echo roots_main_class(); ?>" role="main">
+          <?php include roots_template_path(); ?>
+        </div><!-- /.main -->
+        <?php if (roots_display_sidebar()) : ?>
+          <aside class="sidebar <?php echo roots_sidebar_class(); ?>" role="complementary">
+            <?php include roots_sidebar_path(); ?>
+          </aside><!-- /.sidebar -->
+        <?php endif; ?>
+      </div><!-- /.content -->
+    </div><!-- /.wrap -->
+  </div>
 
   <?php get_template_part('templates/footer'); ?>
 
